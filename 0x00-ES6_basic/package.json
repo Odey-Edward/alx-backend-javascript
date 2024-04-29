@@ -6,7 +6,8 @@
   "main": "0-constants.js",
   "scripts": {
     "test": "jest",
-    "dev": "npx babel-node"
+    "dev": "npx babel-node",
+    "full-test": "./node_modules/.bin/eslint [0-9]*.js && jest"
   },
   "keywords": [],
   "author": "",

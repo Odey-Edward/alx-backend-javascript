@@ -1,5 +1,5 @@
-module.exports = {
-  presets: [
+module.exports = api => {
+  const presets = [
     [
       '@babel/preset-env',
       {
@@ -8,5 +8,10 @@ module.exports = {
         },
       },
     ],
-  ],
+  ];
+
+  return {
+    presets,
+  };
 };
+
