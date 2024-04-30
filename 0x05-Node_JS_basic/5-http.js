@@ -20,6 +20,8 @@ const app = http.createServer((req, res) => {
 
     console.log = mainLog;
 
+    res.write('This is the list of our students\n');
+
     res.write(buffer.join('\n'));
   }
 
