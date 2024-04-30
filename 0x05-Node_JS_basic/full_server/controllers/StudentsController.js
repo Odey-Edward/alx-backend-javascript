@@ -27,6 +27,7 @@ class StudentsController {
         return response.status(200).send(meg);
       })
       .catch(() => response.status(500).send('Cannot load the database'));
+    return null;
   }
 }
 
