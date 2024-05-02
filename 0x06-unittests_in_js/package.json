@@ -1,0 +1,20 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Unittests in JavaScript",
+  "main": "0-calcul.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "alx-backend-javascript"
+  },
+  "author": "Edward Odey",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.1.0"
+  }
+}
