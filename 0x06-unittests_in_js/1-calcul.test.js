@@ -21,9 +21,9 @@ describe('calculateNumber function', () => {
     });
   });
 
-  describe('Divide Two  numbers', () => {
-    it('arguments 1.4 and 0 should return Infinity', () => {
-      assert.equal(calculateNumber('DIVIDE', 1.4, 0), Infinity);
+  describe('Divide by  Zero', () => {
+    it('arguments 1.4 and 0 should return Error', () => {
+      assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error');
     });
   });
 
@@ -47,7 +47,7 @@ describe('calculateNumber function', () => {
 
   describe('Wrong operation type', () => {
     it('passed wrong type with correct arguments should return Error', () => {
-      assert.equal(calculateNumber('add', -1.4, -4.9), undefined);
+      assert.equal(calculateNumber('add', -1.4, -4.9), 'Error');
     });
   });
 });
