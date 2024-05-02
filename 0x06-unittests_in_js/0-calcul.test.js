@@ -26,4 +26,16 @@ describe('calculateNumber function', () => {
       assert.equal(calculateNumber(1.5, 3.7), 6);
     });
   });
+
+  describe('calculate two zeroes', () => {
+    it('should round the arguments 0 and 0 and return 0', () => {
+      assert.equal(calculateNumber(0, 0), 0);
+    });
+  });
+
+  describe('Two negative numbers', () => {
+    it('should round the arguments -3 and -8 and return -11', () => {
+      assert.equal(calculateNumber(-3, -8), -11);
+    });
+  });
 });
