@@ -32,4 +32,16 @@ describe('calculateNumber function', () => {
       assert.equal(calculateNumber('SUM', -3.5, -8.9), -12);
     });
   });
+  
+  describe('Subtract two negative floating numbers', () => {
+    it('arguments -1.4 and -4.5 should return 3', () => {
+      assert.equal(calculateNumber('SUBTRACT', -1.4, -4.5), 3);
+    });
+  });
+
+  describe('Divide two negative floating numbers', () => {
+    it('arguments -1.4 and -4.9 should return 0.2', () => {
+      assert.equal(calculateNumber('DIVIDE', -1.4, -4.9), 0.2);
+    });
+  });
 });
