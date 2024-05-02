@@ -34,8 +34,8 @@ describe('calculateNumber function', () => {
   });
 
   describe('Two negative numbers', () => {
-    it('should round the arguments -3 and -8 and return -11', () => {
-      assert.equal(calculateNumber(-3, -8), -11);
+    it('should round the arguments -3.5 and -8.9 and return -12', () => {
+      assert.equal(calculateNumber(-3.5, -8.9), -12);
     });
   });
 });
