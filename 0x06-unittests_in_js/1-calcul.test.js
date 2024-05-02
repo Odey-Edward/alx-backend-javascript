@@ -47,7 +47,7 @@ describe('calculateNumber function', () => {
 
   describe('Wrong operation type', () => {
     it('passed wrong type with correct arguments should return Error', () => {
-      assert.equal(calculateNumber('add', -1.4, -4.9), 'Error');
+      assert.equal(calculateNumber('add', -1.4, -4.9), undefined);
     });
   });
 });
