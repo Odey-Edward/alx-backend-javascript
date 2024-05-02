@@ -22,8 +22,8 @@ describe('calculateNumber function', () => {
   });
 
   describe('Divide Two  numbers', () => {
-    it('arguments 1.4 and 0 should return Infinity', () => {
-      assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Infinity');
+    it('arguments 1.4 and 0 should return Error', () => {
+      assert.equal(calculateNumber('DIVIDE', 1.4, 0), 'Error');
     });
   });
 
