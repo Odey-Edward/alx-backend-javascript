@@ -5,7 +5,7 @@ const sinon = require('sinon');
 const Utils = require('./utils.js');
 const sendPaymentRequestToApi = require('./3-payment.js');
 
-describe('', () => {
+describe('sendPaymentRequestToApi', () => {
   it('checking if numbers round with spies', () => {
     const checkSoy = sinon.spy(Utils, 'calculateNumber');
     sendPaymentRequestToApi(1, 3);
