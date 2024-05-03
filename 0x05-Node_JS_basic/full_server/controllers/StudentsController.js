@@ -22,7 +22,7 @@ class StudentsController {
       .then((data) => {
         const info = data[major];
 
-        const meg = `Number of students in ${major}: ${info.total}. List: ${info.students.join(', ')}`;
+        const meg = `List: ${info.students.join(', ')}`;
 
         return response.status(200).send(meg);
       })
