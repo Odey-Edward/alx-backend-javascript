@@ -6,7 +6,6 @@ describe('Index page', () => {
   it('should return 200 status code', () => {
     request('http://127.0.0.1:7865', (err, res, body) => {
       assert.strictEqual(res.statusCode, 200);
-      console.log(body)
     });
   });
 
