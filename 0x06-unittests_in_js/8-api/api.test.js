@@ -1,13 +1,18 @@
-const { describe, it } = require('mocha');
 const request = require('request');
-const assert = require('assert');
+const { expect } = require('chai');
 
-describe('Index page', () => {
-  describe('GET /', () => { 
-    it('should return 200 && expected data', () => {
-      request('http://127.0.0.1:7865', (err, res, body) => {
-        assert.strictEqual(res.statusCode, 200);
-        assert.strictEqual(body, 'Welcome to the payment system');
+describe('Integration Testing', () => {
+  describe('GET /', () => {
+    it('Code: 200 | Body: Welcome to the payment system', (done) => {
+      const options = {
+        url: 'http://localhost:7865',
+        method: 'GET',
+      };
+
+      request(options, function (error, response, body) {
+        expect(response.statusCode).to.equal(200);
+        expect(body).to.equal('Welcome to the payment system');
+        done();
       });
     });
   });
