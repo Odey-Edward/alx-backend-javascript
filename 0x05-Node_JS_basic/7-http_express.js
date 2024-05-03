@@ -24,7 +24,8 @@ app.get('/students', (req, res) => {
 
     res.send(buffer.join('\n'));
   } catch (err) {
-    // Do nothing Here
+    buffer.push('Cannot load the database');
+    res.send(buffer.join('\n'));
   }
 });
 
