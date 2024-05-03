@@ -17,6 +17,7 @@ const app = http.createServer((req, res) => {
     };
 
     buffer.push('This is the list of our students');
+
     try {
       countStudents(process.argv[2]);
 
@@ -24,7 +25,8 @@ const app = http.createServer((req, res) => {
 
       res.write(buffer.join('\n'));
     } catch (err) {
-      // Do nothing Here
+      buffer.push('Cannot load the database');
+      res.write(buffer.join('\n'));
     }
   }
 
